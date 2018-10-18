@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cred="http://itq.edu/soa/credito" targetNamespace="http://itq.edu/soa/credito" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:complexType name="credito">
+		<xs:sequence>
+			<xs:element name="nombre" type="xs:string"/>
+			<xs:element name="apellidos" type="xs:string"/>
+			<xs:element name="curp" type="xs:string"/>
+			<xs:element name="domicilio" type="xs:string"/>
+			<xs:element name="salario" type="xs:integer"/>
+			<xs:element name="monto" type="xs:integer"/>
+			<xs:element name="tasaInteres" type="xs:integer"/>
+			<xs:element name="plazo" type="xs:integer"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="credito" type="cred:credito"/>
+</xs:schema>
